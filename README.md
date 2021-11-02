@@ -3,7 +3,7 @@
 [![Latest Version](https://img.shields.io/github/v/release/kiwfy/docker-monitor.svg?style=flat-square)](https://github.com/kiwfy/docker-monitor/releases)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-Project to monitor all running docker containers and all main resources from a machine using grafana and prometheus.
+Project to monitor all running docker containers and all main resources from a machine using grafana and prometheus
 
 ### Run
 
