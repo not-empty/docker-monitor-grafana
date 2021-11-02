@@ -5,6 +5,15 @@
 
 Project to monitor all running docker containers and all main resources from a machine using grafana and prometheus
 
+### Tag your container
+
+First tag ou container groups in yours docker-compose.yml with the label `container_group` for each service you want do filter and run docker-compose up -d for each one
+```
+    labels:
+      container_group: your-group-name
+```
+
+Run the monitor
 ### Run
 
 Requires [Docker](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/) tool.
@@ -15,9 +24,12 @@ docker-compose up -d
 
 ### Grafana
 
-[Grafana](https://grafana.com/) is expose on port `3000` and you can access your dashboards [here](http://localhost:3000/)
-
 The default user and password to login in Grafana are: User `admin` and Password `admin`
+
+[Grafana](https://grafana.com/) is expose on port `3000` and you can access your dashboard [here](http://localhost:3000/d/01FKGR5CQNYH86QB7P8JVPMC84/monitor?orgId=1&refresh=10s&from=now-5m&to=now)
+
+
+You can filter all containers data by your container groups
 
 ### Prometheus
 
