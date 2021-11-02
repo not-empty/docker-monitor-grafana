@@ -7,14 +7,14 @@ Project to monitor all running docker containers and all main resources from a m
 
 ### Tag your container
 
-First tag ou container groups in yours docker-compose.yml with the label `container_group` for each service you want do filter and run docker-compose up -d for each one
+First tag yours containers groups in yours `docker-compose.yml` with the label `container_group` for each service you want do filter and run docker-compose up -d for each one
 ```
     labels:
       container_group: your-group-name
 ```
+### Run the monitor
 
-Run the monitor
-### Run
+Now run the monitor
 
 Requires [Docker](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/) tool.
 
