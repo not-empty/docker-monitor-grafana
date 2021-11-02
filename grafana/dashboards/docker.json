@@ -24,7 +24,7 @@
   "gnetId": 10566,
   "graphTooltip": 1,
   "id": 1,
-  "iteration": 1635872857811,
+  "iteration": 1635872857815,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -299,7 +299,7 @@
       "gridPos": {
         "h": 6,
         "w": 4,
-        "x": 7,
+        "x": 6,
         "y": 1
       },
       "id": 25,
@@ -381,7 +381,7 @@
       "gridPos": {
         "h": 6,
         "w": 4,
-        "x": 11,
+        "x": 10,
         "y": 1
       },
       "id": 30,
@@ -476,8 +476,8 @@
       },
       "gridPos": {
         "h": 6,
-        "w": 9,
-        "x": 15,
+        "w": 10,
+        "x": 14,
         "y": 1
       },
       "id": 20,
@@ -913,7 +913,7 @@
         },
         {
           "exemplar": true,
-          "expr": "100 - (avg by (instance) (irate(node_cpu_seconds_total{mode=\"idle\"}[5m])) * 100)",
+          "expr": "100 - (avg by (instance) (irate(node_cpu_seconds_total{mode=\"idle\"}[1m])) * 100)",
           "format": "time_series",
           "hide": false,
           "interval": "",
@@ -1118,7 +1118,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "sum(rate(container_network_receive_bytes_total{id=\"/\"}[5m])) by (id)",
+          "expr": "sum(rate(container_network_receive_bytes_total{id=\"/\"}[1m])) by (id)",
           "format": "time_series",
           "hide": false,
           "interval": "",
@@ -1129,7 +1129,7 @@
         },
         {
           "exemplar": true,
-          "expr": "- sum(rate(container_network_transmit_bytes_total{id=\"/\"}[5m  ])) by (id)",
+          "expr": "- sum(rate(container_network_transmit_bytes_total{id=\"/\"}[1m])) by (id)",
           "format": "time_series",
           "hide": false,
           "interval": "",
@@ -1250,7 +1250,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "-sum(rate(node_disk_read_bytes_total{}[5m])) by (device)",
+          "expr": "-sum(rate(node_disk_read_bytes_total{}[1m])) by (device)",
           "format": "time_series",
           "hide": false,
           "interval": "",
@@ -1262,7 +1262,7 @@
         },
         {
           "exemplar": true,
-          "expr": "sum(rate(node_disk_written_bytes_total{}[5m])) by (device)",
+          "expr": "sum(rate(node_disk_written_bytes_total{}[1m])) by (device)",
           "format": "time_series",
           "hide": false,
           "interval": "",
@@ -1637,7 +1637,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "rate(container_network_receive_bytes_total{name!=\"\", container_label_container_group=~\"$container_group\"}[5m])",
+          "expr": "rate(container_network_receive_bytes_total{name!=\"\", container_label_container_group=~\"$container_group\"}[1m])",
           "format": "time_series",
           "hide": false,
           "interval": "",
@@ -1648,7 +1648,7 @@
         },
         {
           "exemplar": true,
-          "expr": "sum(rate(container_network_transmit_bytes_total{container_label_container_group=~\"$container_group\"}[5m])) by (name)",
+          "expr": "sum(rate(container_network_transmit_bytes_total{container_label_container_group=~\"$container_group\"}[1m])) by (name)",
           "format": "time_series",
           "hide": true,
           "interval": "",
@@ -1738,7 +1738,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "sum(rate(container_network_transmit_bytes_total{name!=\"\",container_label_container_group=~\"$container_group\"}[5m])) by (name)",
+          "expr": "sum(rate(container_network_transmit_bytes_total{name!=\"\",container_label_container_group=~\"$container_group\"}[1m])) by (name)",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
