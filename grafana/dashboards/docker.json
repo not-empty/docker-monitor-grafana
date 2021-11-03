@@ -24,7 +24,7 @@
   "gnetId": 10566,
   "graphTooltip": 1,
   "id": 1,
-  "iteration": 1635872857815,
+  "iteration": 1635899380798,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -1891,7 +1891,7 @@
             "spanNulls": false,
             "stacking": {
               "group": "A",
-              "mode": "normal"
+              "mode": "none"
             },
             "thresholdsStyle": {
               "mode": "off"
@@ -2207,7 +2207,7 @@
       "type": "timeseries"
     }
   ],
-  "refresh": "10s",
+  "refresh": "5s",
   "schemaVersion": 31,
   "style": "dark",
   "tags": [],

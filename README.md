@@ -5,6 +5,11 @@
 
 Project to monitor all running docker containers and all main resources from a machine using grafana and prometheus
 
+### Screenshots
+
+![Dahsboard 1](https://github.com/kiwfy/docker-monitor/blob/master/screenshots/screenshot1.png?raw=true)
+![Dahsboard 2](https://github.com/kiwfy/docker-monitor/blob/master/screenshots/screenshot2.png?raw=true)
+
 ### Tag your container
 
 First tag yours containers groups in yours `docker-compose.yml` with the label `container_group` for each service you want do filter and run docker-compose up -d for each one
@@ -48,7 +53,6 @@ You can change the default dashboard configurations in [docker.json](https://git
 For update or add another datasource type you can use [datasource.yaml](https://github.com/kiwfy/docker-monitor/blob/master/grafana/provisioning/datasources/datasource.yaml)
 
 **For new dashboards you can just create another json in [dashboard](https://github.com/kiwfy/docker-monitor/tree/master/grafana/dashboards) folder**
-
 
 ### Development
 
